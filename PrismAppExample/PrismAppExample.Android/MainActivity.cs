@@ -3,6 +3,8 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using PrismAppExample.Services.Interfaces;
+using PrismMapsExample.Droid.Services;
 //using Xamarin.Forms.Maps;
 
 namespace PrismMapsExample.Droid
@@ -26,7 +28,8 @@ namespace PrismMapsExample.Droid
     {
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Register any platform specific implementations
+            containerRegistry.Register<IDocumentViewer, DroidDocumentViewer>();
+
         }
     }
 }

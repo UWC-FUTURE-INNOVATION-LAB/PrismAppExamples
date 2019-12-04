@@ -8,7 +8,14 @@
 
     <StackLayout>
 
-        <Label Text="Other View"/>
+        <Image Source="login.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding MyImageCommand}">
+                    
+                </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+            
+        </Image>
 
     </StackLayout>
     

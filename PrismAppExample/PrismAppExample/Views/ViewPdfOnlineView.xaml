@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:controls="clr-namespace:ControlExamples.Controls;assembly=ControlExamples"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PrismAppExample.Views.ViewPdfOnlineView">
+    <StackLayout>
+        <controls:PdfWebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="{Binding PdfUrl}" />
+    </StackLayout>
+</ContentPage>

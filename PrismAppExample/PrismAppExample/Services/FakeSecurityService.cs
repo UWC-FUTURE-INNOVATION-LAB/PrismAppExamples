@@ -115,6 +115,18 @@ namespace PrismAppExample.Services
             menuItem.ImageName = "other.png";
 
             _allMenuItems.Add(menuItem);
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 5;
+            menuItem.MenuItemName = "PDF Viewer";
+            menuItem.NavigationPath = "NavigationPage/ViewPdfView";
+            menuItem.MenuOrder = 5;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
+
+
         }
     }
 }

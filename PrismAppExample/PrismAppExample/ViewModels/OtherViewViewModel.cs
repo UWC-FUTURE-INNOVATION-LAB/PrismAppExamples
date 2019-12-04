@@ -9,9 +9,20 @@ namespace PrismMapsExample.ViewModels
 {
     public class OtherViewViewModel : ViewModelBase
     {
+        private DelegateCommand _myImageCommand;
+        public DelegateCommand MyImageCommand =>
+            _myImageCommand ?? (_myImageCommand = new DelegateCommand(ExecuteMyImageCommand));
+
+        void ExecuteMyImageCommand()
+        {
+
+        }
+
         public OtherViewViewModel(INavigationService navigation) : base(navigation)
         {
             Title = "Other View";
         }
+
+
     }
 }
