@@ -45,6 +45,8 @@ namespace PrismMapsExample
             containerRegistry.RegisterForNavigation<LoginView, LoginViewViewModel>();
             containerRegistry.RegisterForNavigation<ViewPdfView, ViewPdfViewViewModel>();
             containerRegistry.RegisterForNavigation<ViewPdfOnlineView, ViewPdfOnlineViewViewModel>();
+            containerRegistry.RegisterForNavigation<TakePhotoView, TakePhotoViewViewModel>();
+            containerRegistry.RegisterForNavigation<PickPhotoView, PickPhotoViewViewModel>();
         }
     }
 }

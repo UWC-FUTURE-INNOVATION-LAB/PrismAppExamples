@@ -21,6 +21,8 @@ namespace PrismMapsExample.ViewModels
         public OtherViewViewModel(INavigationService navigation) : base(navigation)
         {
             Title = "Other View";
+
+         //   var vm = new MapsViewViewModel(;
         }
 
 

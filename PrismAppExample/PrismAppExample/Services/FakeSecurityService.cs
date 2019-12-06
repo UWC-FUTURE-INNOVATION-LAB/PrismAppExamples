@@ -126,6 +126,25 @@ namespace PrismAppExample.Services
 
             _allMenuItems.Add(menuItem);
 
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 6;
+            menuItem.MenuItemName = "Take Photo";
+            menuItem.NavigationPath = "NavigationPage/TakePhotoView";
+            menuItem.MenuOrder = 6;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 7;
+            menuItem.MenuItemName = "Pick Photo";
+            menuItem.NavigationPath = "NavigationPage/PickPhotoView";
+            menuItem.MenuOrder = 7;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
 
         }
     }
