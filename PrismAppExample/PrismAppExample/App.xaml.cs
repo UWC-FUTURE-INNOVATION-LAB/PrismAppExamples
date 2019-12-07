@@ -37,6 +37,8 @@ namespace PrismMapsExample
             containerRegistry.RegisterSingleton<IMapping, MappingService>();
             containerRegistry.RegisterSingleton<ISecurityService, FakeSecurityService>();
             containerRegistry.RegisterSingleton<IUserProfile, UserProfile>();
+            containerRegistry.Register<IContentPackage, ZipContentPackage>();
+
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainView, MainPageViewModel>();
@@ -47,6 +49,7 @@ namespace PrismMapsExample
             containerRegistry.RegisterForNavigation<ViewPdfOnlineView, ViewPdfOnlineViewViewModel>();
             containerRegistry.RegisterForNavigation<TakePhotoView, TakePhotoViewViewModel>();
             containerRegistry.RegisterForNavigation<PickPhotoView, PickPhotoViewViewModel>();
+            containerRegistry.RegisterForNavigation<EmbeddedHtmlView, EmbeddedHtmlViewViewModel>();
         }
     }
 }

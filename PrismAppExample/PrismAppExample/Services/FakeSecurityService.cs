@@ -146,6 +146,17 @@ namespace PrismAppExample.Services
 
             _allMenuItems.Add(menuItem);
 
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 8;
+            menuItem.MenuItemName = "Embedded HTML View";
+            menuItem.NavigationPath = "NavigationPage/EmbeddedHtmlView";
+            menuItem.MenuOrder = 8;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
+
         }
     }
 }
