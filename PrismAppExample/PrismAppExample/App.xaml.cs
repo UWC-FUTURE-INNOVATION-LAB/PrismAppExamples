@@ -52,6 +52,7 @@ namespace PrismMapsExample
             containerRegistry.RegisterForNavigation<EmbeddedHtmlView, EmbeddedHtmlViewViewModel>();
             containerRegistry.RegisterForNavigation<CarouselDemoView, CarouselDemoViewViewModel>();
             containerRegistry.RegisterForNavigation<YouTubeView, YouTubeViewViewModel>();
+            containerRegistry.RegisterForNavigation<CustomMapView, CustomMapViewViewModel>();
         }
     }
 }

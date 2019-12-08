@@ -177,6 +177,16 @@ namespace PrismAppExample.Services
 
             _allMenuItems.Add(menuItem);
 
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 11;
+            menuItem.MenuItemName = "Custom Maps View";
+            menuItem.NavigationPath = "NavigationPage/CustomMapView";
+            menuItem.MenuOrder = 11;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "map.png";
+
+            _allMenuItems.Add(menuItem);
+
 
         }
     }

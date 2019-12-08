@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismAppExample.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismAppExample.iOS", "PrismAppExample\PrismAppExample.iOS\PrismAppExample.iOS.csproj", "{0AE846EC-7A0F-44A9-B261-FEC4861284FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlExamples", "ControlExamples\ControlExamples.csproj", "{B2BAC6CF-44E9-40AD-A746-D5386945B710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlExamples", "ControlExamples\ControlExamples.csproj", "{B2BAC6CF-44E9-40AD-A746-D5386945B710}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
