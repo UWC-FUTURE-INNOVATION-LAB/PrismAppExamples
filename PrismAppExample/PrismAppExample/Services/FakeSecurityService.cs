@@ -166,6 +166,18 @@ namespace PrismAppExample.Services
             menuItem.ImageName = "other.png";
 
             _allMenuItems.Add(menuItem);
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 10;
+            menuItem.MenuItemName = "YouTube View";
+            menuItem.NavigationPath = "NavigationPage/YouTubeView";
+            menuItem.MenuOrder = 10;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
+
+
         }
     }
 }
