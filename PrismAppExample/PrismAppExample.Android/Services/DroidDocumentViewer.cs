@@ -23,7 +23,7 @@ namespace PrismMapsExample.Droid.Services
             if (Build.VERSION.SdkInt >= BuildVersionCodes.N)
             {
                 var apkUri = FileProvider.GetUriForFile(Android.App.Application.Context,
-                    "com.companyname.appname.fileprovider", file);
+                    "com.companyname.prismappexample.fileprovider", file);
                 intent.SetDataAndType(apkUri, "application/pdf");
                 intent.SetFlags(ActivityFlags.NoHistory);
                 intent.AddFlags(ActivityFlags.GrantReadUriPermission);

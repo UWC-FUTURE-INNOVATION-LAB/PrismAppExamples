@@ -157,6 +157,15 @@ namespace PrismAppExample.Services
 
             _allMenuItems.Add(menuItem);
 
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 9;
+            menuItem.MenuItemName = "Carosuel View";
+            menuItem.NavigationPath = "NavigationPage/CarouselDemoView";
+            menuItem.MenuOrder = 9;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
         }
     }
 }

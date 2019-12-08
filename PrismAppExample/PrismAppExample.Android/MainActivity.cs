@@ -6,7 +6,7 @@ using Prism;
 using Prism.Ioc;
 using PrismAppExample.Services.Interfaces;
 using PrismMapsExample.Droid.Services;
-//using Xamarin.Forms.Maps;
+using Xamarin.Forms;
 
 namespace PrismMapsExample.Droid
 {
@@ -19,11 +19,13 @@ namespace PrismMapsExample.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+
+            Forms.SetFlags("CarouselView_Experimental");
             global::Xamarin.Forms.Forms.Init(this, bundle);
             global::Xamarin.FormsMaps.Init(this, bundle);
 
             CrossCurrentActivity.Current.Init(this, bundle);
-
+         
             LoadApplication(new App(new AndroidInitializer()));
         }
 
