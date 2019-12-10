@@ -25,13 +25,21 @@ namespace PrismAppExample.Services
                     {
                       //  var resourceContentPath = GetContentResourceStorePath();
 
+                        // Directories First
                         foreach (var entry in zip.Entries)
                         {
                             var fullName = Path.Combine(destination, entry.FullName);
 
                             if (string.IsNullOrEmpty(entry.Name))
                                 Directory.CreateDirectory(fullName);
-                            else
+                        }
+
+                        //Then Files
+                        foreach (var entry in zip.Entries)
+                        {
+                            var fullName = Path.Combine(destination, entry.FullName);
+
+                            if (!string.IsNullOrEmpty(entry.Name))
                                 entry.ExtractToFile(fullName);
                         }
                     }
