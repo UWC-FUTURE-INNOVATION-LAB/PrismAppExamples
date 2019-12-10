@@ -187,7 +187,15 @@ namespace PrismAppExample.Services
 
             _allMenuItems.Add(menuItem);
 
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 12;
+            menuItem.MenuItemName = "Clock";
+            menuItem.NavigationPath = "NavigationPage/Timer";
+            menuItem.MenuOrder = 12;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
 
+            _allMenuItems.Add(menuItem);
         }
     }
 }
