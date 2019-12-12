@@ -73,6 +73,9 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\CustomMapRenderer.cs" />
+    <Compile Include="Renderers\HybridWebViewRenderer.cs" />
+    <Compile Include="Renderers\js\JavascriptWebViewClient.cs" />
+    <Compile Include="Renderers\js\JSBridge.cs" />
     <Compile Include="Renderers\PdfWebViewRanderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

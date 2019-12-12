@@ -196,6 +196,29 @@ namespace PrismAppExample.Services
             menuItem.ImageName = "other.png";
 
             _allMenuItems.Add(menuItem);
+
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 12;
+            menuItem.MenuItemName = "Calendar View";
+            menuItem.NavigationPath = "NavigationPage/CalenderView";
+            menuItem.MenuOrder = 12;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 12;
+            menuItem.MenuItemName = "JavaScript View";
+            menuItem.NavigationPath = "NavigationPage/JavaScriptView";
+            menuItem.MenuOrder = 12;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "other.png";
+
+            _allMenuItems.Add(menuItem);
+
+
         }
     }
 }
